@@ -2,6 +2,7 @@ import React from 'react';
 import { Header, Categories} from './components';
 
 function App() {
+
   return (
     <div className="wrapper">
       <Header />
@@ -9,7 +10,7 @@ function App() {
         <div className="container">
           <div className="content__top">
             <Categories
-              onClick = {(item) => console.log(item)}
+              onClick = {() => console.log()}
               items={[
                 "Su mėsa", "Vegetariškos", "Griliaus", "Aštrios", "Uždaros"
               ]}
