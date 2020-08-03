@@ -1,0 +1,177 @@
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/5b7c5a60-390f-4101-ba24-0836e555be69.jpg",
+      "name": "Royal",
+      "desc": "Pievagrybiai, čili padažas, picų padažas, raudonieji svogūnai, vištiena, jautiena, kumpis, mocarelos sūris",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 8.75,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/04096abe-e5bd-4d66-bb26-3d0a235a83fc.jpg",
+      "name": "Cheese",
+      "desc": "Mocarelos sūris, picų padažas, fetos suгis, itališkos žolelės",
+      "types": [
+        0
+      ],
+      "sizes": [
+        26,
+        40
+      ],
+      "price": 6.75,
+      "category": 1,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/658bf8b47eb746c4ba14361bd9dd11fb_233x233.jpeg",
+      "name": "Chicken BBQ",
+      "desc": "Mocarelos sūris, šoninė, vištiena, raudonieji svogūnai, picų padažas, bbq padažas",
+      "types": [
+        0
+      ],
+      "sizes": [
+        26,
+        40
+      ],
+      "price": 7.75,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/96db6e7aa055416a9736425e1121cb4c_233x233.jpeg",
+      "name": "Fiesta",
+      "desc": "Vištiena, mocarelos sūris, raudonieji svogūnai, saliamis, pomidorai, žalioji paprika, česnakinis padažas, chipotle padažas, granuliuoti česnakai",
+      "types": [
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 8.75,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/79e4f8f7-5615-409e-a49d-fb854e8b730e.jpg",
+      "name": "Cheeseburger",
+      "desc": "Mocarelos sūris, pomidorai, šoninė, jautiena, raudonieji svogūnai, marinuoti agurkai, picų padažas",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 7.75,
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/69c373fb37dc4861a1cc1b5ee36d260a_233x233.jpeg",
+      "name": "Crazy",
+      "desc": "Saldžiarūgštis padažas, vištiena, mocarelos sūris, saliamis, picų padažas",
+      "types": [
+        0
+      ],
+      "sizes": [
+        30,
+        40
+      ],
+      "price": 8.75,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/e8d944c6-298f-44a7-b80d-0b73921ec0dc.jpg",
+      "name": "Pepperoni",
+      "desc": "Picų padažas, mocarelos sūris, saliamis",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 8.75,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/37a449db-7539-40c0-b077-f1413026a073.jpg",
+      "name": "Margherita",
+      "desc": "Picų padažas, mocarelos sūris, pomidorai, itališkos žolelės",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 6.75,
+      "category": 4,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/e1a9d21eb2174a8aa0c972517bfca048_233x233.jpeg",
+      "name": "4 seasons",
+      "desc": "Pievagrybiai, pomidorai, mocarelos sūris, kumpis, saliamis, picų padažas, fetos sūris, itališkos žolelės",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 7.75,
+      "category": 5,
+      "rating": 10
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/lt-LT/17436743-9c0b-4943-8f70-db9f6058801d.jpg",
+      "name": "Vegetarian",
+      "desc": "Pievagrybiai, fetos sūris, picų padažas, marinuoti agurkai, juodosios alyvuogės, žalioji paprika, raudonieji svogūnai, mocarelos sūris, pomidorai, itališkos žolelės",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 7.75,
+      "category": 5,
+      "rating": 7
+    }
+  ]
+}
