@@ -20,6 +20,11 @@
     margin-bottom: 20px;
   }
 
+    &__description {
+    min-height: 80px;
+    font-style: 14px;
+  }
+
   &__selector {
     display: flex;
     background-color: #f3f3f3;
