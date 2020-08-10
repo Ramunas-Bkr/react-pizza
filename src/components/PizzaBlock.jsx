@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
-import cn from 'classnames'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import cn from 'classnames';
 
-const PizzaBlock = (props) => {
+const PizzaBlock = ({ name, types, sizes, imageUrl, desc, price}) => {
 
     const availableTypes = ['Plonapadė', 'Storapadė'];
 
     const availableSizes = [26, 30, 40];
 
-    const [activeType, setActiveType] = useState(props.types[0]);
+    const [activeType, setActiveType] = useState(types[0]);
 
-    const [activeSize, setActiveSize] = useState(props.sizes[0]);
+    const [activeSize, setActiveSize] = useState(sizes[0]);
 
     const onSelectType = (index) => {
         setActiveType(index)
@@ -23,11 +24,11 @@ const PizzaBlock = (props) => {
         <div className="pizza-block">
             <img
                 className="pizza-block__image"
-                src={props.imageUrl}
+                src={imageUrl}
                 alt="Pizza"
             />
-            <h4 className="pizza-block__title">{props.name}</h4>
-            <p className="pizza-block__description">{props.desc}</p>
+            <h4 className="pizza-block__title">{name}</h4>
+            <p className="pizza-block__description">{desc}</p>
             <div className="pizza-block__selector">
                 <ul>
                     {availableTypes.map((type, index) =>
@@ -36,7 +37,7 @@ const PizzaBlock = (props) => {
                             onClick={() => onSelectType(index)}
                             className={cn({
                                 active: activeType === index,
-                                disabled: !props.types.includes(index)
+                                disabled: !types.includes(index)
                             })}>
                             {type}
                         </li>)}
@@ -48,7 +49,7 @@ const PizzaBlock = (props) => {
                             onClick={() => onSelectSize(index)}
                             className={cn({
                                 active: activeSize === index,
-                                disabled: !props.sizes.includes(size)
+                                disabled: !sizes.includes(size)
                             })}
                         > {size} cm
                         </li>
@@ -56,7 +57,7 @@ const PizzaBlock = (props) => {
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">Nuo {props.price} €</div>
+                <div className="pizza-block__price">Nuo {price} €</div>
                 <div className="button button--outline button--add">
                     <svg
                         width="12"
@@ -77,5 +78,14 @@ const PizzaBlock = (props) => {
         </div>
     )
 }
+
+PizzaBlock.propTypes = {
+    name: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    types: PropTypes.arrayOf(PropTypes.number).isRequired,
+    sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+};
 
 export default PizzaBlock
