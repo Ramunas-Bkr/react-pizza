@@ -14,7 +14,9 @@ const Home = ({items}) => {
                 />
                 <SortPopup
                     items={[
-                        "Populiariausios", "Pagal kainas", "Pagal abėcėlę"
+                        { name: 'Populiariausios', type: 'popular' },
+                        { name: 'Pagal kainas', type: 'price' },
+                        { name: 'Pagal abėcėlę', type: 'alphabet' }
                     ]}
                 />
             </div>

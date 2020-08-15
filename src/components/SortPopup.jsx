@@ -3,15 +3,13 @@ import React, { useState, useEffect, useRef } from 'react'
 const SortPopup = ({items}) => {
 
     const [visiblePopup, setVisiblePopup] = useState(false);
-
     const [activeSort, setActiveSort] = useState(0);
+    const sortRef = useRef();
 
     const changeActiveSort = (a) => {
         setActiveSort(a);
         setVisiblePopup(false)
     }
-
-    const sortRef = useRef();
 
     const toogleVisiblePopup = () => {
         setVisiblePopup(!visiblePopup)
@@ -44,17 +42,17 @@ const SortPopup = ({items}) => {
                     />
                 </svg>
                 <b>Rūšiuoti pagal:</b>
-                <span onClick={toogleVisiblePopup}>{items[activeSort]}</span>
+                <span onClick={toogleVisiblePopup}>{items[activeSort].name}</span>
             </div>
             {visiblePopup && (
                 <div className="sort__popup">
                     <ul>
-                        {items.map((item, index) =>
+                        {items.map((obj, index) =>
                             <li
-                                key={`${index}_${item}`}
+                                key={`${index}_${obj.type}`}
                                 onClick={() => changeActiveSort(index)}
                                 className={activeSort === index ? 'active' : ''}>
-                                {item}
+                                {obj.name}
                             </li>)}
                     </ul>
                 </div>
