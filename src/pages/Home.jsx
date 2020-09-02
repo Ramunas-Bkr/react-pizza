@@ -23,7 +23,7 @@ const Home = ({items}) => {
             <h2 className="content__title">Visos picos</h2>
             <div className="content__items">
                 {
-                    items.map(obj => <PizzaBlock
+                    items && items.map(obj => <PizzaBlock
                         key={obj.id}
                         {...obj}
                     />)
